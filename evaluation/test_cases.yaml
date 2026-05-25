@@ -1,0 +1,57 @@
+# ManuScript 评测用例
+# 用于跨版本对比测试
+
+# 测试用例格式说明：
+# - topic: 论文主题
+# - sections: 要测试的章节列表
+# - expected: 预期结果（用于评估）
+
+test_cases:
+  # 测试用例 1：医学图像分析
+  - id: "tc_001"
+    topic: "深度学习在医学图像分析中的应用"
+    sections:
+      - title: "研究背景"
+        type: "simple"
+        keywords: ["深度学习", "医学图像", "诊断"]
+      - title: "方法概述"
+        type: "complex"
+        keywords: ["CNN", "图像分割", "特征提取"]
+    expected:
+      min_citations: 2
+      min_length: 200
+
+  # 测试用例 2：自然语言处理
+  - id: "tc_002"
+    topic: "大语言模型在文本生成中的应用"
+    sections:
+      - title: "研究背景"
+        type: "simple"
+        keywords: ["LLM", "GPT", "文本生成"]
+      - title: "技术方法"
+        type: "complex"
+        keywords: ["Transformer", "注意力机制", "预训练"]
+    expected:
+      min_citations: 2
+      min_length: 200
+
+  # 测试用例 3：推荐系统
+  - id: "tc_003"
+    topic: "基于协同过滤的推荐系统研究"
+    sections:
+      - title: "引言"
+        type: "simple"
+        keywords: ["推荐系统", "协同过滤", "用户偏好"]
+      - title: "算法设计"
+        type: "complex"
+        keywords: ["矩阵分解", "相似度计算", "冷启动"]
+    expected:
+      min_citations: 2
+      min_length: 200
+
+# 评测指标权重
+metrics_weights:
+  citation_accuracy: 0.4    # 引用准确率（最重要）
+  retrieval_relevance: 0.3  # 检索相关性
+  text_quality: 0.2         # 文本质量
+  latency: 0.1              # 响应延迟

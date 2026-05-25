@@ -1,0 +1,29 @@
+# ManuScript - Unified Dependencies
+# Merged from v0_1, v0_2, v1_0, v2_0
+
+# Environment variables
+python-dotenv>=1.0.0
+
+# HTTP client
+httpx>=0.25.0
+
+# OpenAI SDK
+openai>=1.0.0
+
+# Gradio UI
+gradio>=4.0.0
+# Pin huggingface_hub to avoid compatibility issues with gradio
+huggingface_hub>=0.19.3,<1.0.0
+
+# Data models
+pydantic>=2.0.0
+
+# Agent framework (v1.0+, v2.0)
+langgraph>=0.0.40
+
+# Async concurrency (v2.0)
+asyncio-pool>=0.6.0
+
+# Testing
+pytest>=7.0.0
+pytest-asyncio>=0.21.0

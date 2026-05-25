@@ -1,0 +1,23 @@
+# ManuScript v1.0 dependencies
+
+# Environment variables
+python-dotenv>=1.0.0
+
+# HTTP client
+httpx>=0.25.0
+
+# OpenAI SDK
+openai>=1.0.0
+
+# Gradio UI
+gradio>=4.0.0
+
+# Data models
+pydantic>=2.0.0
+
+# Agent framework
+langgraph>=0.0.40
+
+# Testing
+pytest>=7.0.0
+pytest-asyncio>=0.21.0
